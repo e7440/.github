@@ -1,0 +1,42 @@
+name: Support request
+description: In-depth support requests that may require back-and-forth debugging.
+title: "Support: <short summary>"
+labels:
+  - support
+  - needs-triage
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the issue or request.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, versions, infra context, and relevant configuration.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction details
+      description: Steps, inputs, and expected vs actual behavior.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Logs, metrics, traces, or screenshots.
+      render: markdown
+    validations:
+      required: false
