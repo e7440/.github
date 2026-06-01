@@ -1,0 +1,51 @@
+name: Meta / repo process
+description: Discuss contribution process, tooling, governance, and housekeeping.
+title: "Meta: <short summary>"
+labels:
+  - meta
+  - maintenance
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for topics about the project itself (not features or bugs).
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic
+      description: What aspect of the project is this about?
+      placeholder: "e.g. release process, branching model, templates, tooling..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: Any context, history, or prior decisions that are relevant.
+      placeholder: "Summarize the current state and why you’re raising this."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal or questions
+      description: Suggest a change, or list questions you’d like to resolve.
+      placeholder: "Describe what you’d like to change or clarify."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who would be affected, and how?
+      placeholder: "Contributors, maintainers, release cadence, tooling, etc."
+      render: markdown
+    validations:
+      required: false
