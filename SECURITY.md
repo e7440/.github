@@ -1,3 +1,1 @@
-default SECURITY.md
-
-to be completed
+	A SECURITY file gives instructions on how to report a security vulnerability in your project and description that hyperlinks the file. For more information, see Adding a security policy to your repository.
