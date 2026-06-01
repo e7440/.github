@@ -1,0 +1,43 @@
+name: Question or help
+description: Ask a question or request help with using this project.
+title: "Question: <short description>"
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a new question, please search existing issues and discussions.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Clearly describe what you want to know or what isn’t working.
+      placeholder: "What are you trying to do, and what’s confusing or failing?"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Environment, versions, and anything else that might matter.
+      placeholder: |
+        - OS / platform  
+        - Project / tool versions  
+        - Relevant configuration snippets (redact secrets)
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What have you tried?
+      description: Describe steps you’ve taken and what happened.
+      placeholder: "Commands, configs, logs, or references you already checked."
+      render: markdown
+    validations:
+      required: false
