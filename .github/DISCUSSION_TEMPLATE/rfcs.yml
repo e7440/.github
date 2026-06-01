@@ -1,0 +1,71 @@
+name: RFC / Design proposal
+description: Propose a substantial change to behavior, APIs, or architecture.
+title: "RFC: <short summary>"
+labels:
+  - rfc
+  - design
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for non-trivial changes that affect behavior, APIs, or architecture.
+
+  - type: input
+    id: scope
+    attributes:
+      label: Scope
+      description: Area(s) affected by this RFC (e.g. API, CLI, infra, docs).
+      placeholder: "API, CLI, controller, pipeline, docs..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Problem / motivation
+      description: Describe the problem or use case and why it matters.
+      placeholder: "What pain are you solving? Who is affected?"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed design
+      description: High-level description of the proposed solution or design.
+      placeholder: |
+        Describe the approach, key components, and how they fit together.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and risks
+      description: Breaking changes, migration steps, operational risk, security concerns.
+      placeholder: "List potential risks, migrations, rollout steps, and mitigations."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches you looked at and why you didn’t choose them.
+      placeholder: "Summarize other designs or tools you evaluated."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open questions
+      description: Known unknowns, things that need input from maintainers or users.
+      placeholder: "List questions or decisions that are still unresolved."
+      render: markdown
+    validations:
+      required: false
