@@ -1,0 +1,62 @@
+name: Usage & patterns
+description: Share or ask about usage patterns, workflows, and best practices.
+title: "Usage: <short summary>"
+labels:
+  - usage
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for "how do I do X?" and for sharing repeatable patterns.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What are you trying to achieve?
+      placeholder: "Describe the outcome you want, not just the tool/command."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / context
+      description: Platforms, versions, and relevant infrastructure details.
+      placeholder: |
+        e.g. "NixOS, k3s on bare metal, GitHub Actions, OCI free tier, etc."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: current-approach
+    attributes:
+      label: Current approach
+      description: What you are currently doing, including configs or scripts.
+      placeholder: "Show what you have now (redact secrets)."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: challenges
+    attributes:
+      label: Challenges / questions
+      description: What’s confusing, broken, or feels clumsy?
+      placeholder: "Describe where you’re stuck or what you’d like to improve."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Links, diagrams, related issues/discussions, or prior art.
+      placeholder: "Optional extra details."
+      render: markdown
+    validations:
+      required: false
