@@ -1,0 +1,39 @@
+name: General discussion
+description: Open-ended conversations, feedback, and anything that doesn’t fit other categories.
+title: "Brief summary of your topic"
+labels:
+  - discussion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for starting a discussion! Please share enough context so others can contribute.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A quick overview of what you want to talk about.
+      placeholder: "Give a short description of your topic..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Add any relevant background, examples, or references.
+      placeholder: |
+        Include context, what you've tried, links, or anything that helps others understand.
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: expectations
+    attributes:
+      label: What outcome are you hoping for?
+      description: Explain what kind of responses or decisions you’d like from this discussion.
+      placeholder: "e.g. feedback, a decision, alternatives, clarification..."
+    validations:
+      required: false
