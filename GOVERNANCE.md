@@ -1,0 +1,1 @@
+A GOVERNANCE file lets people know about how your project is governed. For example, it might discuss project roles and how decisions are made. For more information, see [Leadership and Governance - Open Source Guides](https://opensource.guide/leadership-and-governance/#understanding-governance-for-your-growing-project).
