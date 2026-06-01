@@ -1,0 +1,51 @@
+name: Announcements
+description: Maintainer-posted updates such as releases, deprecations, and roadmap changes.
+title: "Announcement: <short summary>"
+labels:
+  - announcement
+  - maintainer
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This category is intended for maintainers to post project updates.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Brief description of this announcement.
+      placeholder: "Release X.Y, breaking change, or important update..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe what’s changing and why.
+      placeholder: "Include links to releases, changelogs, or docs where relevant."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact / actions
+      description: Who is affected and what they need to do, if anything.
+      placeholder: "Migration steps, timelines, or call-to-action."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Related issues, discussions, or external resources.
+      placeholder: "Links for more context."
+      render: markdown
+    validations:
+      required: false
