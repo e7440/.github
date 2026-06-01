@@ -1,0 +1,54 @@
+name: Documentation issue
+description: Report missing, incorrect, or outdated documentation.
+title: "Docs: <short summary>"
+labels:
+  - documentation
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for problems with documentation, not with the project itself.
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Link to or path of the page/section with the problem.
+      placeholder: "URL or path, e.g. docs/setup.md#installation"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type of issue
+      options:
+        - Incorrect information
+        - Missing documentation
+        - Outdated documentation
+        - Confusing or unclear
+        - Broken link or example
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is wrong or missing?
+      placeholder: "Describe the problem clearly."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix
+      description: Optional — what should it say instead?
+      placeholder: "Proposed correction or addition."
+      render: markdown
+    validations:
+      required: false
