@@ -1,0 +1,50 @@
+name: Idea or proposal
+description: Share ideas, improvements, or RFC-style proposals.
+title: "Proposal: <short description>"
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose enhancements or new directions for the project.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Explain the problem or use case that motivates your idea.
+      placeholder: "What are you trying to solve or enable?"
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe what you’d like to see changed or added.
+      placeholder: "High-level description of your idea or design."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Mention any other options you looked at and why they’re not ideal.
+      placeholder: "Other approaches, existing features, or workarounds."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Anything else that might help evaluate the idea.
+      placeholder: "Links, prior art, diagrams, etc."
+      render: markdown
+    validations:
+      required: false
