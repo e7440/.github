@@ -1,0 +1,61 @@
+name: Show & tell
+description: Share setups, configs, integrations, or success stories.
+title: "Show & tell: <short summary>"
+labels:
+  - showcase
+  - community
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this to share how you’re using this project in the real world.
+
+  - type: textarea
+    id: overview
+    attributes:
+      label: What are you sharing?
+      description: High-level description of your setup or example.
+      placeholder: "Summarize your use case in 2–4 sentences."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: architecture
+    attributes:
+      label: Architecture / diagram
+      description: Describe the components involved and how they fit together.
+      placeholder: "Text description and/or link to a diagram."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: configs
+    attributes:
+      label: Configs / code snippets
+      description: Key snippets that others might reuse (redact secrets).
+      placeholder: "YAML, Nix, Terraform, shell, etc."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: lessons
+    attributes:
+      label: Lessons learned
+      description: What worked well, what didn’t, tips for others.
+      placeholder: "Share gotchas, tuning tips, or operational notes."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Related links
+      description: Repos, blog posts, gists, or demos.
+      placeholder: "Optional links for people who want more detail."
+      render: markdown
+    validations:
+      required: false
