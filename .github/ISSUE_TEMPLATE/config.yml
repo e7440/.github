@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GitHub Community Support
-    url: https://github.com/orgs/community/discussions
-    about: Please ask and answer questions here.
-  - name: GitHub Security Bug Bounty
-    url: https://bounty.github.com/
-    about: Please report security vulnerabilities here.
+  - name: Q&A / Help (Discussion)
+    url: https://github.com/e7440/.github/discussions/new?category=q-and-a
+    about: Ask a question or get help — use Discussions, not Issues.
+  - name: Ideas / Feature requests (Discussion)
+    url: https://github.com/e7440/.github/discussions/new?category=ideas
+    about: Got an idea? Start a Discussion before opening an issue.
+  - name: Security vulnerability (private)
+    url: https://github.com/e7440/.github/security/advisories/new
+    about: Report a critical security issue privately via GitHub Security Advisories.
