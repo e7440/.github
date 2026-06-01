@@ -1,0 +1,65 @@
+name: Suspected bug
+description: Discuss a potential bug before opening a formal issue.
+title: "Bug: <short summary>"
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when you’re not sure if you’ve found a bug or misconfiguration.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What did you expect to happen, and what actually happened?
+      placeholder: "Clear description of the observed vs expected behavior."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, versions, platform, and any relevant infra details.
+      placeholder: |
+        e.g. "NixOS 24.05, k3s vX.Y, Docker vZ, GitHub Actions, etc."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to observe the problem
+      description: List step-by-step instructions, including commands or actions.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / diagnostics
+      description: Relevant logs, stack traces, or debug output (redact secrets).
+      placeholder: "Wrap logs in fenced code blocks for readability."
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: Anything that might help reproduce or narrow down the issue.
+      placeholder: "Frequency, patterns, related issues/discussions, etc."
+      render: markdown
+    validations:
+      required: false
