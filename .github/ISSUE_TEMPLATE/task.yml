@@ -1,0 +1,57 @@
+name: Task / chore
+description: Internal maintenance, infra work, dependency bumps, or housekeeping.
+title: "Task: <short summary>"
+labels:
+  - task
+  - chore
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for work items that aren't bugs or features (dependency bumps, refactors, infra tasks, etc.).
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Task type
+      options:
+        - Dependency / version bump
+        - Refactor / code cleanup
+        - Infrastructure / pipeline change
+        - Configuration update
+        - Documentation update
+        - Security hardening
+        - Other maintenance
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done and why?
+      placeholder: "Clear description of the task and its motivation."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How do we know this is done?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Related issues, PRs, docs, or upstream changelogs.
+      render: markdown
+    validations:
+      required: false
